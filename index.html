@@ -5,6 +5,314 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div>
+      <p class="separador">TAGS</p>
+      <h1>Titulo h1</h1>
+      <h2>Titulo h2</h2>
+      <h3>Titulo h3</h3>
+      <p>Paragrafo</p>
+    </div>
+    <div>
+      <p class="separador">MARCAÇÕES</p>
+      <p><strong>MARCAÇÕES:</strong></p>
+      <p>Este é um texto <strong>em negrito</strong></p>
+      <p>Este é um texto <em>em italico</em></p>
+      <p>Este é um texto <mark>com marcação</mark></p>
+      <p>Este é um texto <small>com a tag small</small></p>
+      <p>Este é um texto <del>que foi removido</del> e substituido por este</p>
+      <p>Este é um texto <ins>que foi inserido</ins></p>
+      <p>Este é um texto <sub>subscript</sub> , ex: O<sub>-2</sub></p>
+      <p>Este é um texto <sup>superscript</sup> , ex: X<sup>2</sup></p>
+    </div>
+    <div>
+      <p class="separador">LINK E IMAGENS</p>
+      <a href="../02 - HTML/README.md">Link para um arquivo da domínio</a>
+
+      <br />
+
+      <p>
+        <img
+          src="https://st.depositphotos.com/1579821/2443/i/450/depositphotos_24438809-stock-photo-delicious-ice-cream-cones.jpg"
+          alt="sorvete"
+          width="130px"
+        />
+        Link de uma imagem online
+      </p>
+      <p>
+        <img
+          src="../02 - HTML/imagens/imagem_sorvete.webp"
+          alt="sorvete"
+          width="130px"
+        />
+        Buscando uma imagem no domínio
+      </p>
+
+      <p>
+        <a
+          href="https://br.freepik.com/vetores-gratis/ilustracao-do-icone-dos-desenhos-animados-de-cone-de-sorvete-conceito-de-icone-de-comida-doce-isolado-estilo-flat-cartoon_13417968.htm#query=sorvete&position=0&from_view=keyword"
+        >
+          <img
+            src="../02 - HTML/imagens/imagem_sorvete.webp"
+            alt="sorvete"
+            width="130px"
+          />
+        </a>
+        Transformando imagem em um link (clique na imagem)
+      </p>
+      <p>
+        <a href="#ancora" id="ancora02"> clique aqui </a> (link ancora)
+        <br /><br /><br /><br />
+        <a href="#ancora02">
+          <img
+            id="ancora"
+            src="../02 - HTML/imagens/google.webp"
+            width="100px"
+          />
+        </a>
+        (link ancora)
+      </p>
+    </div>
+    <div>
+      <p class="separador">TRABALHANDO COM LISTAS</p>
+      <h3>lista não ordenada de compras</h3>
+      <ul>
+        <li>arroz</li>
+        <li>feijão</li>
+        <li>agua</li>
+        <li>limão</li>
+      </ul>
+
+      <h3>lista ordenada de um ranking</h3>
+      <ol>
+        <li>João</li>
+        <li>Julia</li>
+        <li>Matheus</li>
+        <li>Carina</li>
+      </ol>
+    </div>
+    <div>
+      <p class="separador">DIV</p>
+      <h2>Edio Gonçalves Junior</h2>
+      <b>Cidade:</b> Araranguá <br />
+      <b>Telefone:</b> 48 989898989 <br />
+      <b>email:</b> emaipretendido@hotmail.com <br />
+      <hr style="width: 100%" />
+      <div class="backgroundDiv01">
+        <p>
+          Lorem ipsum <br />
+          dolor sit amet consectetur adipisicing elit. Distinctio similique,
+          amet rem perspiciatis, beatae ipsum rerum a blanditiis, repudiandae
+          ipsam ducimus? Alias error officiis distinctio quo pariatur! Vitae, at
+          perferendis dolor sit amet consectetur adipisicing elit. Distinctio
+          similique, amet rem perspiciatis, beatae ipsum rerum a blanditiis,
+          repudiandae ipsam ducimus? Alias error officiis distinctio quo
+          pariatur! Vitae, at perferendis dolor sit amet consectetur adipisicing
+          elit. Distinctio similique, amet rem perspiciatis, beatae ipsum rerum
+          a blanditiis, repudiandae ipsam ducimus? Alias error officiis
+          distinctio quo pariatur! Vitae, at perferendis.
+        </p>
+        <p>OUTRO ELEMENTO</p>
+        <p>MAIS UM ELEMENTO</p>
+      </div>
+      <div class="backgroundDiv02">
+        <p>
+          Lorem ipsum <br />
+          dolor sit amet consectetur adipisicing elit. Distinctio similique,
+          amet rem perspiciatis, beatae ipsum rerum a blanditiis, repudiandae
+          ipsam ducimus? Alias error officiis distinctio quo pariatur! Vitae, at
+          perferendis dolor sit amet consectetur adipisicing elit. Distinctio
+          similique, amet rem perspiciatis, beatae ipsum rerum a blanditiis,
+          repudiandae ipsam ducimus? Alias error officiis distinctio quo
+          pariatur! Vitae, at perferendis dolor sit amet consectetur adipisicing
+          elit. Distinctio similique, amet rem perspiciatis, beatae ipsum rerum
+          a blanditiis, repudiandae ipsam ducimus? Alias error officiis
+          distinctio quo pariatur! Vitae, at perferendis.
+        </p>
+        <div class="color">
+          <p>PODEMOS TER UMA DIV DENTRO DE OUTRA DIV</p>
+        </div>
+        <p>FAZENDO COM QUE LEA TENHA A PROPRIEDADE SEPARADA DA PRIMEIRA DIV</p>
+      </div>
+    </div>
+    <div>
+      <!-- <p class="separador">FORMULÁRIOS</p>
+      <header>FORMULARIOS (TAG: "form")</header>
+      <p>
+        Dentro do form vao estar todos campos onde vamos utilizar e todos os
+        dados preenchidos serao enviados para o backend
+      </p>
+      <p>
+        Primeiro devemos definir o metodo de envio, sendo "GET" ou "POST" e
+        depois adicionar a action
+      </p>
+      <p>
+        "action" nada mais é do que o local onde identificamos o link para onde
+        será enviado as informações do "form". Se os dados seram enviados para o
+        mesmo dominio vamos colocar apenas "/loca" se for em outro dominio
+        precisaremos colocar o endereço completo. <br />ex1:
+        "http://programadorbr.com.br/cadastro" (para outro dominio)<br />ex2:"/cadastro"
+        (para o proprio dominio)
+      </p>
+
+      <form method="get" action="/cadastro">
+        <input id="email" type="text" name="email" />
+        <input id="name" type="text" name="name" />
+        <input type="submit" />
+      </form>
+      Apos o preenchimento e envio ira dar um erro pois nao temos o /cadastro no
+      nosso dominio e verá que com metodo "get" todas informações serao enviadas
+      para o campo de endereço.
+      <br /><br /><br /><br />
+      O metodo "post" esconte todas as informações digitadas nos campos do
+      "form", como no exemplo abaixo:
+      <br />
+      <form method="post" action="/cadastro">
+        <input id="email" type="email" name="email" />
+        <input id="name" type="text" name="name" />
+        <input type="submit" />
+      </form>
+
+      <p style="color: red; font-size: 20px">
+        Sempre que for campo de login tem de ser POST
+      </p>
+
+      <br /><br />
+
+      <p>
+        Aqui abaixo pegamos um link de youtube a transformamos em um campo de
+        busca usando "get". <br />
+        <b> "https://www.youtube.com/results?search_query"</b> onde
+        identificamos que <b> "https://www.youtube.com/results?"</b> é a action,
+        e <b> "search_query"</b> é o name
+      </p>
+
+      <form method="get" action="https://www.youtube.com/results?">
+        <input
+          id="searchYouTube"
+          type="text"
+          name="search_query"
+          placeholder="digite aqui"
+        />
+        <input type="submit" />
+      </form>
+      Lembrando que aunica forma de funcionar é que se for um metodo "get", já
+      que o servidor do youtube esta esperando um "get" e nao um "post" -->
+      <p class="separador">FORMULÁRIOS</p>
+      <p>
+        Primeiro devemos definir o metodo de envio, sendo "GET" ou "POST" e
+        depois adicionar a action.
+      </p>
+      <p>
+        "action" nada mais é do que o local onde identificamos o link para onde
+        será enviado as informações do "form". Se os dados serão enviados para o
+        mesmo domínio vamos colocar apenas "/loca" se for em outro domínio
+        precisaremos colocar o endereço completo. <br />
+        *ex1:* "http://programadorbr.com.br/cadastro" (para outro dominio)<br />
+        *ex2:* "/cadastro" (para o próprio dominio)
+      </p>
+
+      <h2>Método "get"</h2>
+      <p>
+        Com o método "get" todas informções serão enviadas para o campo de
+        endereço.
+      </p>
+      <p>
+        <b>Ex:</b> <br />
+        Aqui pegamos um link de youtube
+        <b> "https://www.youtube.com/results?search_query" </b> que
+        transformamos em um campo de busca usando "get", onde identificamos que
+        <b> "https://www.youtube.com/results?" </b> é a "action", e
+        <b> "search_query"</b> é o "name".
+      </p>
+      <form method="get" action="https://www.youtube.com/results?">
+        <input
+          id="searchYouTube"
+          type="text"
+          name="search_query"
+          placeholder="digite aqui"
+        />
+        <input type="submit" />
+      </form>
+      Vamos ter um campo para preencher que quando dermos submit ele irá buscar
+      no youtube
+
+      <h2>Método "post"</h2>
+      <p>
+        Com o método "post" todas informções serão escondidas. Vamos usar sempre
+        em campo de login.
+      </p>
+      <form method="post" action="/localDoDominio">
+        <input id="email" type="text" name="email" />
+        <input id="name" type="text" name="name" />
+        <input type="submit" />
+      </form>
+      <!-- Toda a informação digitada nos campos serão omitidas para os usuários -->
+
+      <h2>Tipos de input</h2>
+      input <b>"type: text"</b> para usar com texto
+      <form method="get" action="https://www.youtube.com/results?">
+        <input
+          id=""
+          type="text"
+          name="search_query"
+          placeholder="digite aqui"
+        />
+        <input type="submit" />
+      </form>
+      <br />
+
+      input <b>"type: password"</b> deixa todo pontilhado e é usado com metodo
+      "post"
+      <form method="post" action="/localDomínio">
+        <input id="" type="password" name="senha" placeholder="senha" />
+        <input type="submit" />
+      </form>
+      <br />
+
+      input <b>"type: email"</b> para identificar se é um email ou não
+      <form method="post" action="/localDomínio">
+        <input id="" type="password" name="senha" placeholder="email" />
+        <input type="submit" />
+      </form>
+      <br />
+
+      input <b>"type: checkbox"</b> cria uma checkbox, onde vemos identificar
+      cada um com um valor para quando o item for selecionado o backend entende
+      o que foi atribuido na seleção. Com "checkbox" podemos selecionar
+      mais de um item.
+      <form method="get" action="/localDomínio">
+        <input id="" type="checkbox" name="curso" value="op1" /> React Native
+        <br />
+        <input id="" type="checkbox" name="curso" value="op2" /> React Js <br />
+        <input type="submit" />
+      </form> <br>
+
+      input <b>"type: radio"</b> cria uma caixa de seleção igual o checkbox,
+      onde vemos identificar cada um com um valor para quando o item for
+      selecionado o backend entende o que foi atribuido na seleção. Com "radio"
+      podemos selecionar apenas 1 item por vez e se usar "checked" já vamos
+      deixar um iten selecionado automaticamente.
+      <form method="get" action="/localDomínio">
+        <input id="" type="radio" name="genero" value="masc" checked />
+        Masculino <br />
+        <input id="" type="radio" name="genero" value="fem" /> Feminino <br />
+        <input type="submit" />
+      </form> <br>
+
+      input <b>"type: reset"</b> para resetar todos os campos preenchidos e
+      voltar ao formato padrão do formulário.
+      <form method="get" action="/localDomínio">
+        <input id="" type="checkbox" name="curso" value="op1" /> itens 1 <br />
+        <input id="" type="checkbox" name="curso" value="op2" /> itens 2 <br />
+        <input id="" type="checkbox" name="curso" value="op2" /> itens 3 <br />
+        <input id="" type="radio" name="genero" value="masc" checked />
+        Masculino <br />
+        <input id="" type="radio" name="genero" value="fem" /> Feminino <br />
+        <input type="reset" value="Limpar" />
+        <input type="submit" value="Enviar" />
+    </div>
+  </body>
 </html>
