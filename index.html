@@ -9,11 +9,49 @@
   </head>
   <body>
     <div>
-      <p class="separador">TAGS</p>
-      <h1>Titulo h1</h1>
-      <h2>Titulo h2</h2>
-      <h3>Titulo h3</h3>
-      <p>Paragrafo</p>
+      <p class="separador">LINKS DE VIDEO CURSOS</p>
+      <a
+        href="https://www.youtube.com/playlist?list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA"
+        >HTML5 - CSS3 - Referência em Vídeo da Hcode</a
+      >
+      <br />
+      <a
+        href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o"
+        >Curso de HTML5 Completo</a
+      >
+      <br />
+      <p class="separador">TAGS MAIS USADAS</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+        >Documentação AQUI</a
+      ><br /><br />
+      &lt;!– –&gt; Cria um comentário <br />
+      &lt;style&gt;&lt;/style&gt; Css interno <br />
+      &lt;script&gt;&lt;/script&gt; Vincula um Js <br />
+      &lt;div&gt;&lt;/div&gt; Conteúdo em bloco <br />
+      &lt;span&gt;&lt;/span&gt; Conteúdo em linha, (usado mais para adicionar
+      atributos class e id em uma linha) <br />
+      &lt;header&gt;&lt;/header&gt; Para cria o cabeçalho da página e ajudar o
+      google a encontrar a página <br />
+      &lt;nav&gt;&lt;/nav&gt; Para criar menu, para navegação <br />
+      &lt;main&gt;&lt;/main&gt; Para o conteúdo principal da página <br />
+      &lt;article&gt;&lt;/article&gt; Para conteúdo que faz sentido independente
+      da página <br />
+      &lt;section&gt;&lt;/section&gt; Para separa os blocos da página <br />
+      &lt;footer&gt;&lt;/footer&gt; Criar um rodapé <br />
+      &lt;h1&gt;&lt;/h1&gt; Para criar título, vai até o "h6" com ordem de
+      Importância <br />
+      &lt;p&gt;&lt;/p&gt; Para criar um parágrafo <br />
+      &lt;a&gt;&lt;/a&gt; Para criar links <br />
+      &lt;img&gt;&lt;/img&gt; Para inserir uma imagem <br />
+      &lt;br&gt; Para quebrar uma linha <br />
+      &lt;form&gt;&lt;/form&gt; Para criar um formulário <br />
+      &lt;table&gt;&lt;/table&gt; Para criar tabelas <br />
+      &lt;ul&gt;&lt;/ul&gt; Para criar uma lista ordenada <br />
+      &lt;ol&gt;&lt;/ol&gt; Para criar uma lista não ordenada <br />
+      &lt;li&gt;&lt;/li&gt; Para criar um item de uma lista <br />
+      &lt;audio&gt;&lt;/audio&gt; Para imbuir elementos de áudio <br />
+      &lt;video&gt;&lt;/video&gt; Para incorporar conteúdo de vídeo <br />
+      &lt;embed&gt;&lt;/embed&gt; para embutir um arquivo dentro da página<br />
     </div>
     <div>
       <p class="separador">MARCAÇÕES</p>
@@ -29,6 +67,16 @@
     </div>
     <div>
       <p class="separador">LINK E IMAGENS</p>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"
+        >Documentação Hiperlinks AQUI</a
+      ><br />
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+        >Documentação imagens AQUI</a
+      >
+      <br />
+      <br />
+
       <a href="../02 - HTML/README.md">Link para um arquivo da domínio</a>
 
       <br />
@@ -77,6 +125,9 @@
     </div>
     <div>
       <p class="separador">TRABALHANDO COM LISTAS</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
+        >Documentação AQUI</a
+      ><br />
       <h3>lista não ordenada de compras</h3>
       <ul>
         <li>arroz</li>
@@ -95,6 +146,9 @@
     </div>
     <div>
       <p class="separador">DIV</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
+        >Documentação AQUI</a
+      ><br />
       <h2>Edio Gonçalves Junior</h2>
       <b>Cidade:</b> Araranguá <br />
       <b>Telefone:</b> 48 989898989 <br />
@@ -138,71 +192,37 @@
       </div>
     </div>
     <div>
-      <!-- <p class="separador">FORMULÁRIOS</p>
-      <header>FORMULARIOS (TAG: "form")</header>
-      <p>
-        Dentro do form vao estar todos campos onde vamos utilizar e todos os
-        dados preenchidos serao enviados para o backend
-      </p>
-      <p>
-        Primeiro devemos definir o metodo de envio, sendo "GET" ou "POST" e
-        depois adicionar a action
-      </p>
-      <p>
-        "action" nada mais é do que o local onde identificamos o link para onde
-        será enviado as informações do "form". Se os dados seram enviados para o
-        mesmo dominio vamos colocar apenas "/loca" se for em outro dominio
-        precisaremos colocar o endereço completo. <br />ex1:
-        "http://programadorbr.com.br/cadastro" (para outro dominio)<br />ex2:"/cadastro"
-        (para o proprio dominio)
-      </p>
-
-      <form method="get" action="/cadastro">
-        <input id="email" type="text" name="email" />
-        <input id="name" type="text" name="name" />
-        <input type="submit" />
-      </form>
-      Apos o preenchimento e envio ira dar um erro pois nao temos o /cadastro no
-      nosso dominio e verá que com metodo "get" todas informações serao enviadas
-      para o campo de endereço.
-      <br /><br /><br /><br />
-      O metodo "post" esconte todas as informações digitadas nos campos do
-      "form", como no exemplo abaixo:
-      <br />
-      <form method="post" action="/cadastro">
-        <input id="email" type="email" name="email" />
-        <input id="name" type="text" name="name" />
-        <input type="submit" />
-      </form>
-
-      <p style="color: red; font-size: 20px">
-        Sempre que for campo de login tem de ser POST
-      </p>
-
+      <p class="separador">TABELAS</p>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics"
+        >Documentação AQUI</a
+      >
       <br /><br />
-
-      <p>
-        Aqui abaixo pegamos um link de youtube a transformamos em um campo de
-        busca usando "get". <br />
-        <b> "https://www.youtube.com/results?search_query"</b> onde
-        identificamos que <b> "https://www.youtube.com/results?"</b> é a action,
-        e <b> "search_query"</b> é o name
-      </p>
-
-      <form method="get" action="https://www.youtube.com/results?">
-        <input
-          id="searchYouTube"
-          type="text"
-          name="search_query"
-          placeholder="digite aqui"
-        />
-        <input type="submit" />
-      </form>
-      Lembrando que aunica forma de funcionar é que se for um metodo "get", já
-      que o servidor do youtube esta esperando um "get" e nao um "post" -->
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>telefone</th>
+          <th>email</th>
+        </tr>
+        <tr>
+          <td>Edio</td>
+          <td>48 969696969</td>
+          <td>ediogoncalvesjr@hotmail.com</td>
+        </tr>
+        <tr>
+          <td>Matheus</td>
+          <td>48 968698968</td>
+          <td>matheusgoncalvesdafontoura@hotmail.com</td>
+        </tr>
+      </table>
+    </div>
+    <div>
       <p class="separador">FORMULÁRIOS</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+        >Documentação AQUI</a
+      >
       <p>
-        Primeiro devemos definir o metodo de envio, sendo "GET" ou "POST" e
+        Primeiro devemos definir o método de envio, sendo "GET" ou "POST" e
         depois adicionar a action.
       </p>
       <p>
@@ -213,8 +233,9 @@
         *ex1:* "http://programadorbr.com.br/cadastro" (para outro dominio)<br />
         *ex2:* "/cadastro" (para o próprio dominio)
       </p>
-
       <h2>Método "get"</h2>
+      <a href="https://www.dofactory.com/html/method/get">Documentação AQUI</a
+      ><br />
       <p>
         Com o método "get" todas informções serão enviadas para o campo de
         endereço.
@@ -240,6 +261,8 @@
       no youtube
 
       <h2>Método "post"</h2>
+      <a href="https://www.dofactory.com/html/method/post">Documentação AQUI</a
+      ><br />
       <p>
         Com o método "post" todas informções serão escondidas. Vamos usar sempre
         em campo de login.
@@ -249,10 +272,14 @@
         <input id="name" type="text" name="name" />
         <input type="submit" />
       </form>
-      <!-- Toda a informação digitada nos campos serão omitidas para os usuários -->
-
-      <h2>Tipos de input</h2>
+    </div>
+    <div>
+      <p class="separador">input type</p>
       input <b>"type: text"</b> para usar com texto
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text"
+        >Documentação AQUI</a
+      >
       <form method="get" action="https://www.youtube.com/results?">
         <input
           id=""
@@ -264,46 +291,44 @@
       </form>
       <br />
 
-      input <b>"type: password"</b> deixa todo pontilhado e é usado com metodo
-      "post"
-      <form method="post" action="/localDomínio">
-        <input id="" type="password" name="senha" placeholder="senha" />
-        <input type="submit" />
-      </form>
-      <br />
-
-      input <b>"type: email"</b> para identificar se é um email ou não
-      <form method="post" action="/localDomínio">
-        <input id="" type="password" name="senha" placeholder="email" />
-        <input type="submit" />
-      </form>
-      <br />
-
       input <b>"type: checkbox"</b> cria uma checkbox, onde vemos identificar
-      cada um com um valor para quando o item for selecionado o backend entende
-      o que foi atribuido na seleção. Com "checkbox" podemos selecionar
-      mais de um item.
+      cada um com um valor para quando o item for selecionado o backend entender
+      o que foi atribuído na seleção.
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox"
+        >Documentação AQUI</a
+      >
       <form method="get" action="/localDomínio">
         <input id="" type="checkbox" name="curso" value="op1" /> React Native
         <br />
         <input id="" type="checkbox" name="curso" value="op2" /> React Js <br />
         <input type="submit" />
-      </form> <br>
+      </form>
+      <br />
 
       input <b>"type: radio"</b> cria uma caixa de seleção igual o checkbox,
       onde vemos identificar cada um com um valor para quando o item for
-      selecionado o backend entende o que foi atribuido na seleção. Com "radio"
+      selecionado o backend entende o que foi atribuído na seleção. Com "radio"
       podemos selecionar apenas 1 item por vez e se usar "checked" já vamos
-      deixar um iten selecionado automaticamente.
+      deixar um item selecionado automaticamente.
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio"
+        >Documentação AQUI</a
+      >
       <form method="get" action="/localDomínio">
         <input id="" type="radio" name="genero" value="masc" checked />
         Masculino <br />
         <input id="" type="radio" name="genero" value="fem" /> Feminino <br />
         <input type="submit" />
-      </form> <br>
+      </form>
+      <br />
 
       input <b>"type: reset"</b> para resetar todos os campos preenchidos e
       voltar ao formato padrão do formulário.
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset"
+        >Documentação AQUI</a
+      >
       <form method="get" action="/localDomínio">
         <input id="" type="checkbox" name="curso" value="op1" /> itens 1 <br />
         <input id="" type="checkbox" name="curso" value="op2" /> itens 2 <br />
@@ -313,6 +338,215 @@
         <input id="" type="radio" name="genero" value="fem" /> Feminino <br />
         <input type="reset" value="Limpar" />
         <input type="submit" value="Enviar" />
+      </form>
+      <br />
+
+      input <b>"type: color"</b> Para criar uma caixa de cor onde vai ser
+      enviado exadecimal da cor selecionada
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color"
+        >Documentação AQUI</a
+      >
+      <form method="get" action="">
+        <input type="color" name="cor" /> <br />
+        <input type="submit" />
+      </form>
+      <br /><br />
+
+      Campo para password <b>"type: password"</b> deixa todo pontilhado e é
+      usado com meéodo "post"
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password"
+        >Documentação AQUI</a
+      >
+      <form method="post" action="/localDomínio">
+        <input id="" type="password" name="senha" placeholder="senha" />
+        <input type="submit" />
+      </form>
+      <br /><br />
+
+      input <b>"type: date"</b> para criar uma caixa de data
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date"
+        >Documentação AQUI</a
+      >
+      <form method="get" action="">
+        <input type="date" name="date" /> Formato padrão <br />
+        <input type="date" name="date" max="2022-07-20" /> Com data máxima para
+        selecionar <br />
+        <input type="datetime-local" name="date" /> Formato com data e hora
+        <br />
+        <input type="submit" />
+      </form>
+      <br />
+
+      input <b>"type: file"</b> para enviar arquivo vamos usar "file" e o método
+      tem de ser "post"
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file"
+        >Documentação AQUI</a
+      >
+      <form method="post" action="">
+        <input type="file" name="arquivo" /> <br />
+        <input type="reset" name="limpar" value="limpar" />
+        <input type="submit" value="enviar" />
+      </form>
+      <br />
+
+      input <b>"type: number"</b> campo exclusivo para números
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number"
+        >Documentação AQUI</a
+      >
+      <form method="post" action="">
+        <input type="number" name="numero" /> formato padrão<br />
+        <input type="number" name="numero" min="5" max="10" /> formato com
+        mínimo e máximo, podemos deixar só mínimo ou máximo tambem<br />
+        <input type="submit" value="enviar" />
+      </form>
+      <br />
+
+      input <b>"type: range"</b> Campo para intervalos
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/range"
+        >Documentação AQUI</a
+      >
+      <form method="post" action="">
+        <input type="range" name="intervalo" min="-10" max="10" value="0" />
+        podemos setar minimo, maximo e valor inicial<br />
+        <input type="submit" value="enviar" />
+      </form>
+      <br />
+
+      input <b>"type: tel</b> campo para telefones
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel"
+        >Documentação AQUI</a
+      >
+      <form method="post" action="">
+        <input type="tel" name="telefone" /><br />
+        <input type="submit" value="enviar" />
+      </form>
+      <br />
+
+      input <b>"type: email"</b> campo para email
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email"
+        >Documentação AQUI</a
+      >
+      <form method="post" action="">
+        <input type="email" name="telefone" /> ele identifica se está sendo
+        digitado um email, se nao for ele nao vai enviar<br />
+        <input type="submit" value="enviar" />
+      </form>
+    </div>
+    <div>
+      <p class="separador">SELECT</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select"
+        >Documentação AQUI</a
+      ><br /><br />
+      <form method="get" action="">
+        <select name="estado">
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="SP" selected>São Paulo</option>
+          <option value="ES">Espirito Santo</option>
+        </select>
+        <input type="submit" value="Enviar" />
+      </form>
+      O valor enviado para o backend é sempre o que está após o "value". Se
+      quiser fixar umas das opções como padrão vamos colocar o atributo
+      "selected na "option" desejada.
+      <br />
+      <br />
+      Podemos também fazer algumas alterações no "select", como o "size" e o
+      "multiple", onde o "size" vai mostrar visualmente o número proposto na
+      formatação e o "multiple" vai deixar selecionar mais de uma opção.
+      <form method="get" action="">
+        <select name="estado" size="4" multiple>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="SP" selected>São Paulo</option>
+          <option value="ES">Espirito Santo</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="BH">Bahia</option>
+          <option value="SC">Santa Catarina</option>
+        </select>
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+    <div>
+      <p class="separador">TEXTAREA</p>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"
+        >Documentação AQUI</a
+      ><br />
+      <br />
+      <form method="get" action="">
+        <input type="text" name="assunto" placeholder="Assunto" />
+        <br />
+        <textarea
+          name="mensagem"
+          cols="30"
+          rows="10"
+          placeholder="Digite aqui"
+        ></textarea>
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+    <div>
+      <p class="separador">VIDEO</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"
+        >Documentação AQUI</a
+      ><br /><br />
+      <video
+        controls
+        muted
+        src="./imagens/neuropsicologa.mp4"
+        width="500px"
+      ></video>
+      <h1>Video atributos</h1>
+      <p>
+        "controls" = por padrão o "vídeo" vem sem os controles, então colocamos
+        o atributo "controls" para ter acesso aos controles. <br />
+        <br />
+        "autoplay" = serve para ao carregar a página o vídeo já iniciar
+        automaticamente, mas alguns navegadores não dão play automático caso
+        tenha som no vídeo, então devemos também usar "muted" <br />
+        <br />
+        "loop" = toda vez que o vídeo termina de rodar ele inicia novamente
+        <br />
+        <br />
+        "poster" = para adicionar uma imagem de capa para o vídeo <br />
+        <br />
+        "preload" = tem 3 opções de valores para ele, "auto" ao carregar a
+        página o vídeo vai começar a carregar na memória do computador
+        automaticamente, "none" o vídeo só vai carregar se o usuário der play no
+        vídeo, "metadata" quando a página terminar de carregar o vídeo já vai
+        ter alguns dados carregados, como o player, nome de autor, etc, os meta
+        dados mas não o conteúdo do vídeo.
+      </p>
+    </div>
+    <div>
+      <p class="separador">iFrame</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"
+        >Documentação AQUI</a
+      ><br /><br />
+      <p>Usando o iFrame para mostrar o conteúdo de outra página</p>
+      <iframe class="frame" src="./README.md" frameborder="0"></iframe>
+      <p>
+        iFrame serve para colocar o conteúdo de outra pagina dentro de uma
+        página, ela é muito útil para pôr vídeo de outros sites dentro da
+        própria página. No caso do youtube podemos ir em compartilhar (shere)
+        ela terá embed onde tem um código iFrame
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ikUJg2YAX3M"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
   </body>
 </html>

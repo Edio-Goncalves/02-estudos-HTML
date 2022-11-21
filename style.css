@@ -1,7 +1,8 @@
 .separador{
-    text-align: center;
+    text-align: left;
     font-size: 22px;
     padding: 5px;
+    padding-left: 30px;
     color: white;
     background-color: blue;
 }
@@ -20,4 +21,9 @@
 h2{
     background-color: rgb(250, 250, 178);
     width: max-content;
+}
+.frame {
+    background-color: blanchedalmond;
+    width: 660px;
+    height: 380px;
 }
