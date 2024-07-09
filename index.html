@@ -12,7 +12,8 @@
       <p class="separador">LINKS DE VIDEO CURSOS</p>
       <a
         href="https://www.youtube.com/playlist?list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA"
-        >HTML5 - CSS3 - Referência em Vídeo da Hcode</a
+        >HTML5 - CSS3 - TODOS ATRIBUTOS E EVENTOS Referência em Vídeo da
+        Hcode</a
       >
       <br />
       <a
@@ -20,27 +21,33 @@
         >Curso de HTML5 Completo</a
       >
       <br />
-      <p class="separador">TAGS MAIS USADAS</p>
+      <p class="separador">TAGS/ELEMENTOS MAIS USADAS</p>
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
         >Documentação AQUI</a
       ><br /><br />
-      &lt;!– –&gt; Cria um comentário <br />
+      &lt;!– –&gt; Cria um comentário (shift+alt+A)<br />
+      &lt;header&gt;&lt;/header&gt; Para cria o cabeçalho da página e ajudar o
+      google a encontrar a página <br />
+      &lt;tittle&gt;&lt;/tittle&gt; Para identificar a pagina, nunca repita o
+      tittle nas paginas para ajudar o buscador <br />
+      &lt;meta&gt;&lt;/meta&gt; Para identificar a pagina para o buscador e
+      setar informações da pagina <br />
       &lt;style&gt;&lt;/style&gt; Css interno <br />
       &lt;script&gt;&lt;/script&gt; Vincula um Js <br />
+      &lt;p&gt;&lt;/p&gt; Para criar um parágrafo <br />
+      &lt;h1&gt;&lt;/h1&gt; Para criar título, vai até o "h6" com ordem de da
+      página, H1 é muito importante para CEO<br />
+      &lt;h2&gt;&lt;/h2&gt; Para criar o cabeçalho mais importante é muito
+      importante para CEO<br />
       &lt;div&gt;&lt;/div&gt; Conteúdo em bloco <br />
       &lt;span&gt;&lt;/span&gt; Conteúdo em linha, (usado mais para adicionar
       atributos class e id em uma linha) <br />
-      &lt;header&gt;&lt;/header&gt; Para cria o cabeçalho da página e ajudar o
-      google a encontrar a página <br />
       &lt;nav&gt;&lt;/nav&gt; Para criar menu, para navegação <br />
       &lt;main&gt;&lt;/main&gt; Para o conteúdo principal da página <br />
       &lt;article&gt;&lt;/article&gt; Para conteúdo que faz sentido independente
-      da página <br />
       &lt;section&gt;&lt;/section&gt; Para separa os blocos da página <br />
       &lt;footer&gt;&lt;/footer&gt; Criar um rodapé <br />
-      &lt;h1&gt;&lt;/h1&gt; Para criar título, vai até o "h6" com ordem de
       Importância <br />
-      &lt;p&gt;&lt;/p&gt; Para criar um parágrafo <br />
       &lt;a&gt;&lt;/a&gt; Para criar links <br />
       &lt;img&gt;&lt;/img&gt; Para inserir uma imagem <br />
       &lt;br&gt; Para quebrar uma linha <br />
@@ -52,6 +59,166 @@
       &lt;audio&gt;&lt;/audio&gt; Para imbuir elementos de áudio <br />
       &lt;video&gt;&lt;/video&gt; Para incorporar conteúdo de vídeo <br />
       &lt;embed&gt;&lt;/embed&gt; para embutir um arquivo dentro da página<br />
+
+      <p class="separador">ATRIBUTOS GLOBAIS (usado em qualquer TAG)</p>
+      <div>
+        class="" - para adicionar classe do CSS (.) <br />
+        id="" - para adicionar ID do CSS (#) <br />
+        accesskey="" - define uma tecla para focar elemento, tecla de atalho
+        <br />
+        contenteditable="" - conteudo pode ou nao ser editavel (true, false)
+        <br />
+        data-="" - armazenar dados de um elemento, resgistros invisiveis ao
+        usuario <br />
+        dir="" - direção do conteudo (auto, ltr, rtl (x to x)) <br />
+        draggable="" - elemento pode ser arrastado (false, true) ex: rrastar
+        arquivos <br />
+        dropzone="" - aceita elemento draggable (false, true), ex: campo onde
+        recebe arquivos; <br />
+        hidden - oculta o elemento; <br />
+        lang="" - linguagem do conteudo do elemento, para buscador e tradutor
+        <br />
+        spellcheck="" - verificar ortografia do elemento escrito pelo usuario
+        <br />
+        translate="" - se o conteudo pode ou nao ser traduzido <br />
+        tabindex="" - organiza a tabulação dos formularios (form tabindex="1")
+        <br />
+        title="" - box informativo que abre com o mouse em cima <br />
+      </div>
+      <p class="separador">EVENTOS DO ELEMENTO - TODOS COM PREFIXO "on"</p>
+      <p class="separador">EVENTOS DE JANELA DO ELEMENTO</p>
+      afterprint="" - Disparado quando manda a página ser impressa. <br />
+      beforeprint="" - Disparado antes de mandar a página ser impressa. <br />
+      beforeunload="" - Disparado antes do navegador carregar outra página. (o
+      que paginas de anuncios usam para te deixar preso...)
+      <br />
+      error="" - Disparado quando ocorrer um erro. <br />
+      hashchange="" - Disparado quando o hash da url da página é alterado
+      (.com.br#alterado).
+      <br />
+      load="" - Disparado quando toda a página for carregada (a janela
+      carregada). <br />
+      message="" - Disparado quando ocorrer uma mensagem. <br />
+      offline="" - Disparado quando o navegador é desconectado da internet.
+      <br />
+      online="" - Disparado quando o navegador é conectado com a internet.
+      <br />
+      pagehide="" - Disparado quando a página é ocultada do usuario. <br />
+      pageshow="" - Disparado quando a página é mostrada ao usuario, inicia apos
+      "onload". <br />
+      popstate="" - Disparado quando a ocorrência no histórico do navegador é
+      alterada. <br />
+      resize="" - Disparado quando a janela é redimensionada, largura e altura.
+      <br />
+      storage="" - Disparado quando o armazenamento do navegador é alterado.
+      <br />
+      unload="" - Disparado quando o usuário atualiza a página ou fecha a
+      janela.
+      <br />
+      <p class="separador">EVENTOS DE FORMULARIO DO ELEMENTO</p>
+      blur="" - Disparado quando o foco do elemento é removido. <br />
+      change="" - Disparado quando termina de altera o valor do elemento, apos
+      prencher um campo do formulario e tirar o foco, o "blur" tambem acontece
+      antes do change <br />
+      contextmenu="" - Disparado quando o usuário abre o menu de contexto, ex:
+      clicar com botao direito em cima do elemento com "contextmenu".
+      <br />
+      focus="" - Disparado quando o elemento é focado. <br />
+      input="" - Disparado quando o elemento recebe uma entrada de valor, sempre
+      que entra dados dentro do elemento <br />
+      invalid="" - Disparado quando o valor do elemento é inválido. <br />
+      reset="" - Disparado quando o valor do elemento é redefinido ao estado
+      inicial. ex: button type="reset"<br />
+      search="" - Disparado quando o elemento input do tipo search é enviado.
+      Escrever em um campo e apertar enter. ex: input="search"
+      <br />
+      select="" - Disparado quando o valor do elemento é selecionado. <br />
+      submit="" - Disparado quando o formulário é enviado. <br />
+      <p class="separador">EVENTOS DE TECLADO</p>
+      keydown="" - Disparado quando a tecla vai para baixo. <br />
+      keypress="" - Disparado quando a tecla é pressionada. <br />
+      keyup="" - Disparado quando a tecla é solta. <br />
+      <p class="separador">EVENTOS DE MOUSE DO ELEMENTO</p>
+      click="" - Disparado quando o elemento recebe um clique. <br />
+      dblclick="" - Disparado quando o elemento recebe um clique duplo. <br />
+      mousedown="" - Disparado quando o botão do clique vai para baixo. <br />
+      mousemove="" - Disparado quando o cursor do mouse se move sobre o
+      elemento.
+      <br />
+      mouseout="" - Disparado quando o cursor do mouse NÃO ESTÁ em cima do
+      elemento. <br />
+      mouseover="" - Disparado quando o cursor do mouse ESTÁ em cima do elemento
+      .
+      <br />
+      mouseup="" - Disparado quando o botão do clique é solto. <br />
+      wheel="" - Disparado quando a roda do mouse é rodada. <br />
+      mouseenter="" - Disparado quando o cursor do mouse entra em cima do
+      elemento.
+      <br />
+      mouseleave="" - Disparado quando o cursor do mouse sai de cima do
+      elemento.
+      <br />
+      <p class="separador">EVENTOS DE ARRASTO DO ELEMENTO</p>
+      drag="" - Disparado quando o elemento é arrastado, é preciso que o
+      elemento seja "draggable". <br />
+      dragend="" - Disparado quando o elemento para de ser arrastado. <br />
+      dragenter="" - Disparado quando o elemento arrastado entra em um elemento
+      que permite soltar. <br />
+      dragleave="" - Disparado quando o elemento arrastado sai de cima de um
+      elemento que permite soltar. <br />
+      dragover="" - Disparado quando o elemento arrastado passa em um elemento
+      que permite soltar. <br />
+      dragstart="" - Disparado quando o elemento começa a ser arrastado. <br />
+      drop="" - Disparado quando o elemento é solto dendro do elemento
+      selecionado. <br />
+      scroll="" - Disparado quando o scroll é rolado <br />
+      <p class="separador">EVENTOS DE TRANSFERENCIA</p>
+      copy="" - Disparado quando o conteúdo do elemento é copiado. <br />
+      cut="" - Disparado quando o conteúdo do elemento é recortado. <br />
+      paste="" - Disparado quando o conteúdo do elemento é colado. <br />
+      <p class="separador">EVENTOS DE MIDIA DO ELEMENTO</p>
+      abort="" - Disparado quando o carregamento da mídia é cancelado. <br />
+      canplay="" - Disparado quando a mídia carregou o suficiente para começar.
+      <br />
+      canplaythrough="" - Disparado quando a mídia carregou e pode ser
+      reproduzido até o final. <br />
+      cuechange="" - Disparado quando o texto de uma trilha é alterado. <br />
+      durationchange - Disparado quando o tamanho total da mídia é alterado.
+      <br />
+      emptied="" - Disparado quando acontece algum problema e a mídia fica
+      indisponível. <br />
+      ended="" - Disparado quando a mídia foi consumida até o fim. <br />
+      error="" - Disparado quando um erro acontece. <br />
+      loadeddata="" - Disparado quando os dados da mídia são carregados. <br />
+      loadedmetadata="" - Disparado quando os metadados da mídia são carregados.
+      <br />
+      loadstart="" - Disparado quando os dados da mídia começam a ser
+      carregados.
+      <br />
+      pause="" - Disparado quando a mídia é pausada. <br />
+      play="" - Disparado quando a mídia é começada. <br />
+      playing="" - Disparado quando depois que a mídia realmente começou. <br />
+      progress="" - Disparado enquanto o navegador obtém os dados da mídia.
+      <br />
+      ratechange="" - Disparado quando a taxa de reprodução é alterada. <br />
+      seeked="" - Disparado quando a busca de dados da mídia terminou. <br />
+      seeking="" - Disparado quando a busca de dados da mídia está acontecendo.
+      <br />
+      stalled="" - Disparado quando o navegador não pode buscar os dados de
+      mídia por qualquer motivo. <br />
+      suspend="" - Disparado quando a busca de dados da mídia é parado antes de
+      ser completamente carregado. <br />
+      timeupdate="" - Disparado quando a posição da reprodução é alterada.
+      <br />
+      volumechange="" - Disparado quando o volume do áudio da mídia é alterado.
+      <br />
+      waiting="" - Disparado quando a mídia é pausada para armazenar mais dados
+      em buffer. <br />
+      <p class="separador">OUTROS</p>
+      toggle="" - Disparado quando o usuário abre ou fecha o elemento details.
+      <br />
+
+      <div></div>
     </div>
     <div>
       <p class="separador">MARCAÇÕES</p>

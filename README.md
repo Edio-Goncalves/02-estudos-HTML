@@ -29,11 +29,11 @@
 
 - `<!– –>` //Cria um comentário
 - `<style></style>` //Css interno
-- `<script></script>` //Vincula um Js
+- `<script></script>` //Vincula um JS
 - `<div></div>` //Conteúdo em bloco
-- `<span></span>` //Conteúdo em linha, (usado mais para adicionar atributos class e id em uma linha)
-- `<header></header>` //Para cria o cabeçalho da página e ajudar o google a encontrar a página
-- `<nav></nav>` //Para criar menu, para navegação
+- `<span></span>` //Conteúdo em linha, (usado mais para adicionar class e id em uma linha, receber input também)
+- `<header></header>` //Para cria o cabeçalho da página e ajudar o google a encontrar a página (TAG buscador)
+- `<nav></nav>` //Para criar menu, para navegação (TAG buscador)
 - `<main></main>` //Para o conteúdo principal da página
 - `<article></article>` //Para conteúdo que faz sentido independente da página
 - `<section></section>` //Para separa os blocos da página
