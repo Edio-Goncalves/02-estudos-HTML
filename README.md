@@ -124,8 +124,8 @@
 - `tabindex=""` / organiza a tabulação dos formularios (form tabindex="1")
 - `title=""` / box informativo que abre com o mouse em cima
 
-  <p class="separador">EVENTOS DO ELEMENTO - TODOS COM PREFIXO "on"</p>
-  <p class="separador">EVENTOS DE JANELA DO ELEMENTO</p>
+<p class="separador">EVENTOS DO ELEMENTO - TODOS COM PREFIXO "on"</p>
+<p class="separador">EVENTOS DE JANELA DO ELEMENTO</p>
 
 - `afterprint=""` / Disparado quando manda a página ser impressa.
 - `beforeprint=""` / Disparado antes de mandar a página ser impressa.
