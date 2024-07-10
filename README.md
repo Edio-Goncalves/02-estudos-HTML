@@ -108,24 +108,25 @@
 ### ATRIBUTOS GLOBAIS
 
 <p class="separador">ATRIBUTOS GLOBAIS (usado em qualquer TAG)</p>
-    
-  - `class=""` / para adicionar classe do CSS (.)
-  - `id=""` / para adicionar ID do CSS (#)
-  - `accesskey=""` / define uma tecla para focar elemento, tecla de atalho
-  - `contenteditable=""` / conteudo pode ou nao ser editavel (true, false)
-  - `data-=""` / armazenar dados de um elemento, resgistros invisiveis ao usuario
-  - `dir=""` / direção do conteudo (auto, ltr, rtl (x to x))
-  - `draggable=""` / elemento pode ser arrastado (false, true) ex: rrastar arquivos
-  - `dropzone=""` / aceita elemento draggable (false, true), ex: campo onde recebe arquivos; 
-  - `hidden` / oculta o elemento
-  - `lang=""` / linguagem do conteudo do elemento, para buscador e tradutor
-  - `spellcheck=""` / verificar ortografia do elemento escrito pelo usuario
-  - `translate=""` / se o conteudo pode ou nao ser traduzido 
-  - `tabindex=""` / organiza a tabulação dos formularios (form tabindex="1")
-  - `title=""` / box informativo que abre com o mouse em cima
-      
+
+- `class=""` / para adicionar classe do CSS (.)
+- `id=""` / para adicionar ID do CSS (#)
+- `accesskey=""` / define uma tecla para focar elemento, tecla de atalho
+- `contenteditable=""` / conteudo pode ou nao ser editavel (true, false)
+- `data-=""` / armazenar dados de um elemento, resgistros invisiveis ao usuario
+- `dir=""` / direção do conteudo (auto, ltr, rtl (x to x))
+- `draggable=""` / elemento pode ser arrastado (false, true) ex: rrastar arquivos
+- `dropzone=""` / aceita elemento draggable (false, true), ex: campo onde recebe arquivos;
+- `hidden` / oculta o elemento
+- `lang=""` / linguagem do conteudo do elemento, para buscador e tradutor
+- `spellcheck=""` / verificar ortografia do elemento escrito pelo usuario
+- `translate=""` / se o conteudo pode ou nao ser traduzido
+- `tabindex=""` / organiza a tabulação dos formularios (form tabindex="1")
+- `title=""` / box informativo que abre com o mouse em cima
+
   <p class="separador">EVENTOS DO ELEMENTO - TODOS COM PREFIXO "on"</p>
   <p class="separador">EVENTOS DE JANELA DO ELEMENTO</p>
+
   - `afterprint=""` / Disparado quando manda a página ser impressa.
   - `beforeprint=""` / Disparado antes de mandar a página ser impressa.
   - `beforeunload=""` / Disparado antes do navegador carregar outra página. (o que paginas de anuncios usam para te deixar preso...)
@@ -138,11 +139,12 @@
   - `pagehide=""` / Disparado quando a página é ocultada do usuario.
   - `pageshow=""` / Disparado quando a página é mostrada ao usuario, inicia apos "onload".
   - `popstate=""` / Disparado quando a ocorrência no histórico do navegador é alterada.
-  - `resize=""` / Disparado quando a janela é redimensionada, largura e altura. 
-  - `storage=""` / Disparado quando o armazenamento do navegador é alterado. 
+  - `resize=""` / Disparado quando a janela é redimensionada, largura e altura.
+  - `storage=""` / Disparado quando o armazenamento do navegador é alterado.
   - `unload=""` / Disparado quando o usuário atualiza a página ou fecha a janela.
 
   <p class="separador">EVENTOS DE FORMULARIO DO ELEMENTO</p>
+
   - `blur=""` / Disparado quando o foco do elemento é removido.
   - `change=""` / Disparado quando termina de altera o valor do elemento, apos prencher um campo do formulario e tirar o foco, o "blur" tambem acontece antes do change
   - `contextmenu=""` / Disparado quando o usuário abre o menu de contexto, ex: clicar com botao direito em cima do elemento com "contextmenu".
@@ -155,11 +157,13 @@
   - `submit=""` / Disparado quando o formulário é enviado.
 
   <p class="separador">EVENTOS DE TECLADO</p>
+
   - `keydown=""` / Disparado quando a tecla vai para baixo.
   - `keypress=""` / Disparado quando a tecla é pressionada.
   - `keyup=""` / Disparado quando a tecla é solta.
 
   <p class="separador">EVENTOS DE MOUSE DO ELEMENTO</p>
+
   - `click=""` / Disparado quando o elemento recebe um clique.
   - `dblclick=""` / Disparado quando o elemento recebe um clique duplo.
   - `mousedown=""` / Disparado quando o botão do clique vai para baixo.
@@ -172,6 +176,7 @@
   - `mouseleave=""` / Disparado quando o cursor do mouse sai de cima do elemento.
 
   <p class="separador">EVENTOS DE ARRASTO DO ELEMENTO</p>
+
   - `drag=""` / Disparado quando o elemento é arrastado, é preciso que o elemento seja "draggable".
   - `dragend=""` / Disparado quando o elemento para de ser arrastado.
   - `dragenter=""` / Disparado quando o elemento arrastado entra em um elemento que permite soltar.
@@ -180,22 +185,20 @@
   - `dragstart=""` / Disparado quando o elemento começa a ser arrastado.
   - `drop=""` / Disparado quando o elemento é solto dendro do elemento selecionado.
   - `scroll=""` / Disparado quando o scroll é rolado
-  
+
   <p class="separador">EVENTOS DE TRANSFERENCIA</p>
+
   - `copy=""` / Disparado quando o conteúdo do elemento é copiado.
   - ` cut=""` / Disparado quando o conteúdo do elemento é recortado.
   - `paste=""` / Disparado quando o conteúdo do elemento é colado.
-  
+
   <p class="separador">EVENTOS DE MIDIA DO ELEMENTO</p>
+
   - `abort=""` / Disparado quando o carregamento da mídia é cancelado.
   - `canplay=""` / Disparado quando a mídia carregou o suficiente para começar.
-  
-  <br />
   - `canplaythrough=""` / Disparado quando a mídia carregou e pode ser reproduzido até o final.
   - `cuechange=""` / Disparado quando o texto de uma trilha é alterado.
   - `durationchange` / Disparado quando o tamanho total da mídia é alterado.
-  
-  <br />
   - `emptied=""` / Disparado quando acontece algum problema e a mídia fica indisponível.
   - `ended=""` / Disparado quando a mídia foi consumida até o fim.
   - `error=""` / Disparado quando um erro acontece.
@@ -216,6 +219,7 @@
   - `waiting=""` / Disparado quando a mídia é pausada para armazenar mais dados em buffer.
 
   <p class="separador">OUTROS</p>
+
   - `toggle=""` / Disparado quando o usuário abre ou fecha o elemento details.
 
 #
