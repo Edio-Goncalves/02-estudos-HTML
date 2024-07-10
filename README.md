@@ -28,7 +28,6 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" >Documentação Elementos AQUI</a>
 
 - `<!– –>` //Cria um comentário
-- `<!– –>` //Cria um comentário
 - `<meta></meta>` //Para identificar a página para o buscador e setar informações da página
 - `<title></title>` //Para identificar a página. Nunca repita o "tittle" nas páginas para ajudar o buscador
 - `<link></link>` //Usado para relacionar o arquivo HTML ao CSS, JS, etc
@@ -142,7 +141,7 @@
 - `resize=""` / Disparado quando a janela é redimensionada, largura e altura.
 - `storage=""` / Disparado quando o armazenamento do navegador é alterado.
 - `unload=""` / Disparado quando o usuário atualiza a página ou fecha a janela.
-  
+
 <p class="separador">EVENTOS DE FORMULARIO DO ELEMENTO</p>
 
 - `blur=""` / Disparado quando o foco do elemento é removido.
@@ -155,6 +154,7 @@
 - `search=""` / Disparado quando o elemento input do tipo search é enviado. Escrever em um campo e apertar enter. ex: input="search"
 - `select=""` / Disparado quando o valor do elemento é selecionado
 - `submit=""` / Disparado quando o formulário é enviado.
+
 <p class="separador">EVENTOS DE TECLADO</p>
 
 - `keydown=""` / Disparado quando a tecla vai para baixo.
