@@ -28,43 +28,195 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" >Documentação Elementos AQUI</a>
 
 - `<!– –>` //Cria um comentário
+- `<!– –>` //Cria um comentário
+- `<meta></meta>` //Para identificar a página para o buscador e setar informações da página
+- `<title></title>` //Para identificar a página. Nunca repita o "tittle" nas páginas para ajudar o buscador
+- `<link></link>` //Usado para relacionar o arquivo HTML ao CSS, JS, etc
 - `<style></style>` //Css interno
 - `<script></script>` //Vincula um JS
 - `<div></div>` //Conteúdo em bloco
-- `<span></span>` //Conteúdo em linha, (usado mais para adicionar class e id em uma linha, receber input também)
-- `<header></header>` //Para cria o cabeçalho da página e ajudar o google a encontrar a página (TAG buscador)
-- `<nav></nav>` //Para criar menu, para navegação (TAG buscador)
+- `<span></span>` //Conteúdo em linha sem peso semantico, (usado mais para adicionar css e texto, costuma usar dentro de "p")
+- `<header></header>` //Para o cabeçalho, pode ter mais de um na página mas com contextos diferentes
+- `<nav></nav>` //Para criar menu, para navegação, e para agrupar os links de navegação, podemos repetir independente de onde tiver
 - `<main></main>` //Para o conteúdo principal da página
-- `<article></article>` //Para conteúdo que faz sentido independente da página
-- `<section></section>` //Para separa os blocos da página
+- `<article></article>` //Para conteúdo que faz sentido independente da importância e separar semanticamente para os buscadores
+- `<section></section>` //Para separa os blocos da página, separar as seções, não é semanticamente boa mas ainda melhor que "div"
+- `<aside></aside>` //para fazer conteúdo "ao lado", um conteúdo secundário, para dar peso semantico
 - `<footer></footer>` //Criar um rodapé
-- `<h1></h1>` //Para criar título, vai até o "h6" com ordem de Importância
+- `<h1></h1>` //Para criar título, vai até o "h6" com ordem de importancia, usar apenas um h1
+- `<h2></h2>` //Para criar o subtitulo mais importante
 - `<p></p>` //Para criar um parágrafo
 - `<a></a>` //Para criar links
 - `<img></img>` //Para inserir uma imagem
+- `<svg></svg>` //vetor
+- `<figure></figure>` //Para inserir uma figura e tornar o HTML semantico
 - `<br>` //Para quebrar uma linha
+- `<button></button>` //Para criar botao, sempre identifique o "type"
 - `<form></form>` //Para criar um formulário
+- `<input></input>` //Para definir um campo de entrada para o usuário
+- `<fieldset</fieldset>` //Para criar um grupo de campos de formulários
+- `<select></select>` //Para criar lista suspensa
+- `<option></option>` //Para mostrar opções lista suspensa "select"
+- `<optgroup></optgroup>` //Para criar grupos dentro de uma lista suspensa "select"
+- `<datalist></datalist>` //Para criar auto complete em listas suspensas "select"
+- `<textarea></textarea>` //Para colocar texto dentro
+- `<output></output>` //Para mostrar resultado de um calculo
+- `<meter></meter>` //Para mostrar em gráfico uma medida dentro de um intervalo, ex: espaço em HD usados de 5mb de 15mb
+- `<progress></progress>` //Para mostrar o nivel de progresso de uma tarefa
+- `<legend></legend>` //Para criar legendas
 - `<table></table>` //Para criar tabelas
+- `<tr></tr>` //Para criar linha da tabela
+- `<td></td>` //Para criar coluna na tabela
+- `<thead></thead>` //Para criar o "head" da tabela
+- `<th></th>` //Para criar celulas na "head" da tabela, substitui o "td"
+- `<tbody></tbody>` //Para criar o body da tabela
+- `<tfoot></tfoot>` //Para criar o foot da tabela
+- `<details></details>` //cria uma seta para clicar e expandir, é obrigado ter um "summary", peso semantico nas buscas, é melhor que fazer por JS ou CSS
+- `<summary></summary>` //usada apenas dentro de "details"
 - `<ul></ul>` //Para criar uma lista ordenada
 - `<ol></ol>` //Para criar uma lista não ordenada
 - `<li></li>` //Para criar um item de uma lista
 - `<audio></audio>` //Para imbuir elementos de áudio
 - `<video></video>` //Para incorporar conteúdo de vídeo
 - `<embed></embed>` //Para embutir um arquivo dentro da página
-- `<iframe></iframe>` //Para embutir um arquivo de uma outra página dentro da própria página
+- `<picture></picture>` //para colocar uma imagem na tela usando "img" e source, bom para tela responsivas, fazendo HTML escolher a fonte de acordo com o tamanho da tela
+- `<source></source>` //para usar dentro de "video", "audio" e "picture", usamos ela para dar mais de uma fonte, para dar fontes alternativas
+- `<embed></embed>` //Para embutir um arquivo dentro da página
+- `<object></object>` //para definir um objeto dentro do HTML, arquivos que não são lidos por padrão (arquivos, video, audio, PDF, java), pode usar tambem dentro de formulário
+- `<param></param>` //para definir parametros para TAG "object"
+- `<iframe></iframe>` //para imbutir outro HTML dentro do HTML por link ou ".html"
+- `<map></map>` //para definir uma area dentro de um elemento onde podemos inserir links, sempre usado com a TAG "area"
+- `<area></area>` //para definir uma area dentro do "map"
+- `<data></data>` //para associar o texto com algum outro dado, ex: `<data value=1>` camiseta M `<data/>`
+- `<time></time>` //para identificar buscadores sobre tempo
+- `<code></code>` //para identificar como codigo de computador
+- `<iframe></iframe>` //para imbutir outro HTML dentro do HTML por link ou ".html"
+- `<dl></dl>` //para definir uma lista com descrição
+- `<dt></dt>` //para definir um termo (título) da lista com descrição "dl"
+- `<dd></dd>` //para definir uma descrição da lista com descrição "dl"
+- `<strong> </strong>` <strong>em negrito</strong>
+- `<em> </em>` // Este é um texto <em>em italico</em>
+- `<mark> </mark>` // Para marcar o texto como se fosse um marca texto amarelo
+- `<small> </small>` // Para deixar o texto pequeno
+- `<del> </del>` // Este é um texto <del>que foi removido</del> e substituido por este
+- `<ins> </ins>` // Este é um texto <ins>que foi inserido</ins>
+- `<sub> </sub>` // Este é um texto <sub>subscript</sub> , ex: O<sub>-2</sub>
+- `<sup> </sup>` // Este é um texto <sup>superscript</sup> , ex: X<sup>2</sup>
 
 #
 
-### MARCAÇÕES
+### ATRIBUTOS GLOBAIS
 
-- `<strong> </strong>` <strong>em negrito</strong>
-- `<em> </em>` Este é um texto <em>em italico</em>
-- `<mark> </mark>` Para marcar o texto como se fosse um marca texto amarelo
-- `<small> </small>` Para deixar o texto pequeno
-- `<del> </del>` Este é um texto <del>que foi removido</del> e substituido por este
-- `<ins> </ins>` Este é um texto <ins>que foi inserido</ins>
-- `<sub> </sub>` Este é um texto <sub>subscript</sub> , ex: O<sub>-2</sub>
-- `<sup> </sup>` Este é um texto <sup>superscript</sup> , ex: X<sup>2</sup>
+<p class="separador">ATRIBUTOS GLOBAIS (usado em qualquer TAG)</p>
+    
+  - `class=""` / para adicionar classe do CSS (.)
+  - `id=""` / para adicionar ID do CSS (#)
+  - `accesskey=""` / define uma tecla para focar elemento, tecla de atalho
+  - `contenteditable=""` / conteudo pode ou nao ser editavel (true, false)
+  - `data-=""` / armazenar dados de um elemento, resgistros invisiveis ao usuario
+  - `dir=""` / direção do conteudo (auto, ltr, rtl (x to x))
+  - `draggable=""` / elemento pode ser arrastado (false, true) ex: rrastar arquivos
+  - `dropzone=""` / aceita elemento draggable (false, true), ex: campo onde recebe arquivos; 
+  - `hidden` / oculta o elemento
+  - `lang=""` / linguagem do conteudo do elemento, para buscador e tradutor
+  - `spellcheck=""` / verificar ortografia do elemento escrito pelo usuario
+  - `translate=""` / se o conteudo pode ou nao ser traduzido 
+  - `tabindex=""` / organiza a tabulação dos formularios (form tabindex="1")
+  - `title=""` / box informativo que abre com o mouse em cima
+      
+  <p class="separador">EVENTOS DO ELEMENTO - TODOS COM PREFIXO "on"</p>
+  <p class="separador">EVENTOS DE JANELA DO ELEMENTO</p>
+  - `afterprint=""` / Disparado quando manda a página ser impressa.
+  - `beforeprint=""` / Disparado antes de mandar a página ser impressa.
+  - `beforeunload=""` / Disparado antes do navegador carregar outra página. (o que paginas de anuncios usam para te deixar preso...)
+  - `error=""` / Disparado quando ocorrer um erro.
+  - `hashchange=""` / Disparado quando o hash da url da página é alterado (.com.br#alterado).
+  - `load=""` / Disparado quando toda a página for carregada (a janela carregada).
+  - `message=""` / Disparado quando ocorrer uma mensagem.
+  - `offline=""` / Disparado quando o navegador é desconectado da internet.
+  - `online=""` / Disparado quando o navegador é conectado com a internet.
+  - `pagehide=""` / Disparado quando a página é ocultada do usuario.
+  - `pageshow=""` / Disparado quando a página é mostrada ao usuario, inicia apos "onload".
+  - `popstate=""` / Disparado quando a ocorrência no histórico do navegador é alterada.
+  - `resize=""` / Disparado quando a janela é redimensionada, largura e altura. 
+  - `storage=""` / Disparado quando o armazenamento do navegador é alterado. 
+  - `unload=""` / Disparado quando o usuário atualiza a página ou fecha a janela.
+
+  <p class="separador">EVENTOS DE FORMULARIO DO ELEMENTO</p>
+  - `blur=""` / Disparado quando o foco do elemento é removido.
+  - `change=""` / Disparado quando termina de altera o valor do elemento, apos prencher um campo do formulario e tirar o foco, o "blur" tambem acontece antes do change
+  - `contextmenu=""` / Disparado quando o usuário abre o menu de contexto, ex: clicar com botao direito em cima do elemento com "contextmenu".
+  - `focus=""` / Disparado quando o elemento é focado.
+  - `input=""` / Disparado quando o elemento recebe uma entrada de valor, sempre que entra dados dentro do elemento
+  - `invalid=""` / Disparado quando o valor do elemento é inválido.
+  - `reset=""` / Disparado quando o valor do elemento é redefinido ao estado inicial. ex: button type="reset"
+  - `search=""` / Disparado quando o elemento input do tipo search é enviado. Escrever em um campo e apertar enter. ex: input="search"
+  - `select=""` / Disparado quando o valor do elemento é selecionado
+  - `submit=""` / Disparado quando o formulário é enviado.
+
+  <p class="separador">EVENTOS DE TECLADO</p>
+  - `keydown=""` / Disparado quando a tecla vai para baixo.
+  - `keypress=""` / Disparado quando a tecla é pressionada.
+  - `keyup=""` / Disparado quando a tecla é solta.
+
+  <p class="separador">EVENTOS DE MOUSE DO ELEMENTO</p>
+  - `click=""` / Disparado quando o elemento recebe um clique.
+  - `dblclick=""` / Disparado quando o elemento recebe um clique duplo.
+  - `mousedown=""` / Disparado quando o botão do clique vai para baixo.
+  - `mousemove=""` / Disparado quando o cursor do mouse se move sobre o elemento.
+  - `mouseout=""` / Disparado quando o cursor do mouse NÃO ESTÁ em cima do elemento.
+  - `mouseover=""` / Disparado quando o cursor do mouse ESTÁ em cima do elemento.
+  - `mouseup=""` / Disparado quando o botão do clique é solto.
+  - `wheel=""` / Disparado quando a roda do mouse é rodada.
+  - `mouseenter=""` / Disparado quando o cursor do mouse entra em cima do elemento.
+  - `mouseleave=""` / Disparado quando o cursor do mouse sai de cima do elemento.
+
+  <p class="separador">EVENTOS DE ARRASTO DO ELEMENTO</p>
+  - `drag=""` / Disparado quando o elemento é arrastado, é preciso que o elemento seja "draggable".
+  - `dragend=""` / Disparado quando o elemento para de ser arrastado.
+  - `dragenter=""` / Disparado quando o elemento arrastado entra em um elemento que permite soltar.
+  - `dragleave=""` / Disparado quando o elemento arrastado sai de cima de um elemento que permite soltar.
+  - `dragover=""` / Disparado quando o elemento arrastado passa em um elemento que permite soltar.
+  - `dragstart=""` / Disparado quando o elemento começa a ser arrastado.
+  - `drop=""` / Disparado quando o elemento é solto dendro do elemento selecionado.
+  - `scroll=""` / Disparado quando o scroll é rolado
+  
+  <p class="separador">EVENTOS DE TRANSFERENCIA</p>
+  - `copy=""` / Disparado quando o conteúdo do elemento é copiado.
+  - ` cut=""` / Disparado quando o conteúdo do elemento é recortado.
+  - `paste=""` / Disparado quando o conteúdo do elemento é colado.
+  
+  <p class="separador">EVENTOS DE MIDIA DO ELEMENTO</p>
+  - `abort=""` / Disparado quando o carregamento da mídia é cancelado.
+  - `canplay=""` / Disparado quando a mídia carregou o suficiente para começar.
+  
+  <br />
+  - `canplaythrough=""` / Disparado quando a mídia carregou e pode ser reproduzido até o final.
+  - `cuechange=""` / Disparado quando o texto de uma trilha é alterado.
+  - `durationchange` / Disparado quando o tamanho total da mídia é alterado.
+  
+  <br />
+  - `emptied=""` / Disparado quando acontece algum problema e a mídia fica indisponível.
+  - `ended=""` / Disparado quando a mídia foi consumida até o fim.
+  - `error=""` / Disparado quando um erro acontece.
+  - `loadeddata=""` / Disparado quando os dados da mídia são carregados.
+  - `loadedmetadata=""` / Disparado quando os metadados da mídia são carregados.
+  - `loadstart=""` / Disparado quando os dados da mídia começam a ser carregados.
+  - `pause=""` / Disparado quando a mídia é pausada.
+  - `play=""` / Disparado quando a mídia é começada.
+  - `playing=""` / Disparado quando depois que a mídia realmente começou.
+  - `progress=""` / Disparado enquanto o navegador obtém os dados da mídia.
+  - `ratechange=""` / Disparado quando a taxa de reprodução é alterada.
+  - `seeked=""` / Disparado quando a busca de dados da mídia terminou.
+  - `seeking=""` / Disparado quando a busca de dados da mídia está acontecendo.
+  - `stalled=""` / Disparado quando o navegador não pode buscar os dados de mídia por qualquer motivo.
+  - `suspend=""` / Disparado quando a busca de dados da mídia é parado antes de ser completamente carregado.
+  - `timeupdate=""` / Disparado quando a posição da reprodução é alterada.
+  - `volumechange=""` / Disparado quando o volume do áudio da mídia é alterado.
+  - `waiting=""` / Disparado quando a mídia é pausada para armazenar mais dados em buffer.
+
+  <p class="separador">OUTROS</p>
+  - `toggle=""` / Disparado quando o usuário abre ou fecha o elemento details.
 
 #
 
