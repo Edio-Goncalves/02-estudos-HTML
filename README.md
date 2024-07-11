@@ -27,12 +27,12 @@
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" >Documentação Elementos AQUI</a>
 
-- `<!– –>` //Cria um comentário
-- `<meta></meta>` //Para identificar a página para o buscador e setar informações da página
+- `<!– –>` //Cria um comentário (shift+alt+A)
+- `<meta></meta>` //(charset, content, http-equiv, name) Para identificar a página para o buscador e setar informações da página
 - `<title></title>` //Para identificar a página. Nunca repita o "tittle" nas páginas para ajudar o buscador
-- `<link></link>` //Usado para relacionar o arquivo HTML ao CSS, JS, etc
-- `<style></style>` //Css interno
-- `<script></script>` //Vincula um JS
+- `<link></link>` //(crossorigin, href, hreflang, media, rel, size, type) Usado para relacionar o arquivo HTML ao CSS, JS, etc
+- `<style></style>` //(media, type) Css interno
+- `<script></script>` //(async, charset, defer, src, type) Vincula um JS
 - `<div></div>` //Conteúdo em bloco
 - `<span></span>` //Conteúdo em linha sem peso semantico, (usado mais para adicionar css e texto, costuma usar dentro de "p")
 - `<header></header>` //Para o cabeçalho, pode ter mais de um na página mas com contextos diferentes
@@ -45,62 +45,60 @@
 - `<h1></h1>` //Para criar título, vai até o "h6" com ordem de importancia, usar apenas um h1
 - `<h2></h2>` //Para criar o subtitulo mais importante
 - `<p></p>` //Para criar um parágrafo
-- `<a></a>` //Para criar links
-- `<img></img>` //Para inserir uma imagem
+- `<a></a>` //(download, href, hreflang, media, ping, referrerpolicy, rel, target, type, ) Para criar links
+- `<img></img>` //(src, alt, crossorigin, height, ismap, longdesc, size, srcset, usemap, width) Para inserir uma imagem
 - `<svg></svg>` //vetor
 - `<figure></figure>` //Para inserir uma figura e tornar o HTML semantico
 - `<br>` //Para quebrar uma linha
-- `<button></button>` //Para criar botao, sempre identifique o "type"
-- `<form></form>` //Para criar um formulário
-- `<input></input>` //Para definir um campo de entrada para o usuário
-- `<fieldset</fieldset>` //Para criar um grupo de campos de formulários
-- `<select></select>` //Para criar lista suspensa
-- `<option></option>` //Para mostrar opções lista suspensa "select"
-- `<optgroup></optgroup>` //Para criar grupos dentro de uma lista suspensa "select"
+- `<button></button>` //(autofocus, disabled, form, name, type, value) Para criar botao, sempre identifique o "type"
+- `<form></form>` //(accept-charset, action, autocomplete, enctype, method, name, novalidate, target) Para criar um formulário
+- `<input></input>` //(21 atributos próprios) Para definir um campo de entrada para o usuário
+- `<fieldset</fieldset>` //(disabled, form, name) Para criar um grupo de campos de formulários
+- `<select></select>` //(autofocus, disabled, multiple, name, required, size) Para criar lista suspensa
+- `<option></option>` //(disabled, label, selected, value) Para mostrar opções lista suspensa "select"
+- `<optgroup></optgroup>` //(disabled, label) Para criar grupos dentro de uma lista suspensa "select"
 - `<datalist></datalist>` //Para criar auto complete em listas suspensas "select"
-- `<textarea></textarea>` //Para colocar texto dentro
-- `<output></output>` //Para mostrar resultado de um calculo
-- `<meter></meter>` //Para mostrar em gráfico uma medida dentro de um intervalo, ex: espaço em HD usados de 5mb de 15mb
-- `<progress></progress>` //Para mostrar o nivel de progresso de uma tarefa
+- `<textarea></textarea>` //(autofocus, cols, dirname, disabled, form, maxlength, name, placeholder, readonly, required, rows, wrap) Para colocar texto dentro
+- `<output></output>` //(for, form, name) Para mostrar resultado de um calculo
+- `<meter></meter>` //(form, high, low, max, min, optimum, value) Para mostrar em gráfico uma medida dentro de um intervalo, ex: espaço em HD usados de 5mb de 15mb
+- `<progress></progress>` //(max, value) Para mostrar o nivel de progresso de uma tarefa
 - `<legend></legend>` //Para criar legendas
 - `<table></table>` //Para criar tabelas
 - `<tr></tr>` //Para criar linha da tabela
-- `<td></td>` //Para criar coluna na tabela
+- `<td></td>` //(colspan, headers, rowspan) Para criar coluna na tabela
 - `<thead></thead>` //Para criar o "head" da tabela
-- `<th></th>` //Para criar celulas na "head" da tabela, substitui o "td"
+- `<th></th>` //(abbr, colspan, headers, rowspan, scope, sorted) Para criar celulas na "head" da tabela, substitui o "td"
 - `<tbody></tbody>` //Para criar o body da tabela
 - `<tfoot></tfoot>` //Para criar o foot da tabela
-- `<details></details>` //cria uma seta para clicar e expandir, é obrigado ter um "summary", peso semantico nas buscas, é melhor que fazer por JS ou CSS
+- `<details></details>` //(open) cria uma seta para clicar e expandir, é obrigado ter um "summary", peso semantico nas buscas, é melhor que fazer por JS ou CSS
 - `<summary></summary>` //usada apenas dentro de "details"
 - `<ul></ul>` //Para criar uma lista ordenada
-- `<ol></ol>` //Para criar uma lista não ordenada
-- `<li></li>` //Para criar um item de uma lista
-- `<audio></audio>` //Para imbuir elementos de áudio
-- `<video></video>` //Para incorporar conteúdo de vídeo
-- `<embed></embed>` //Para embutir um arquivo dentro da página
+- `<ol></ol>` //(reserved, start, type) Para criar uma lista não ordenada
+- `<li></li>` //(value) Para criar um item de uma lista
+- `<audio></audio>` //(autoplay, controls, loop, muted, preload, src) Para imbuir elementos de áudio
+- `<video></video>` //(autoplay, controls, height, loop, muted, poster, preload, src, width) Para incorporar conteúdo de vídeo
+- `<embed></embed>` //(height, src, type, width) Para embutir um arquivo dentro da página
 - `<picture></picture>` //para colocar uma imagem na tela usando "img" e source, bom para tela responsivas, fazendo HTML escolher a fonte de acordo com o tamanho da tela
-- `<source></source>` //para usar dentro de "video", "audio" e "picture", usamos ela para dar mais de uma fonte, para dar fontes alternativas
-- `<embed></embed>` //Para embutir um arquivo dentro da página
-- `<object></object>` //para definir um objeto dentro do HTML, arquivos que não são lidos por padrão (arquivos, video, audio, PDF, java), pode usar tambem dentro de formulário
-- `<param></param>` //para definir parametros para TAG "object"
-- `<iframe></iframe>` //para imbutir outro HTML dentro do HTML por link ou ".html"
-- `<map></map>` //para definir uma area dentro de um elemento onde podemos inserir links, sempre usado com a TAG "area"
-- `<area></area>` //para definir uma area dentro do "map"
+- `<source>` //(src, srcset, media, size, type) para usar dentro de "video", "audio" e "picture", usamos ela para dar mais de uma fonte, para dar fontes alternativas
+- `<object></object>` //(data, form, height, name, type, usemap, width) para definir um objeto dentro do HTML, arquivos que não são lidos por padrão (arquivos, video, audio, PDF, java), pode usar tambem dentro de formulário
+- `<param></param>` //(name, value) para definir parametros para TAG "object"
+- `<iframe></iframe>` //(height, name, sandbox, src, srcdoc, width) para imbutir outro HTML dentro do HTML por link ou ".html"
+- `<map></map>` //(name) para definir uma area dentro de um elemento onde podemos inserir links, sempre usado com a TAG "area"
+- `<area></area>` //(alt, coords, download, href, hreflang, media, rel, shape, target, type) para definir uma area dentro do "map"
 - `<data></data>` //para associar o texto com algum outro dado, ex: `<data value=1>` camiseta M `<data/>`
-- `<time></time>` //para identificar buscadores sobre tempo
+- `<time></time>` //(datetime) para identificar buscadores sobre tempo
 - `<code></code>` //para identificar como codigo de computador
-- `<iframe></iframe>` //para imbutir outro HTML dentro do HTML por link ou ".html"
 - `<dl></dl>` //para definir uma lista com descrição
 - `<dt></dt>` //para definir um termo (título) da lista com descrição "dl"
 - `<dd></dd>` //para definir uma descrição da lista com descrição "dl"
 - `<strong> </strong>` <strong>em negrito</strong>
-- `<em> </em>` // Este é um texto <em>em italico</em>
-- `<mark> </mark>` // Para marcar o texto como se fosse um marca texto amarelo
-- `<small> </small>` // Para deixar o texto pequeno
-- `<del> </del>` // Este é um texto <del>que foi removido</del> e substituido por este
-- `<ins> </ins>` // Este é um texto <ins>que foi inserido</ins>
-- `<sub> </sub>` // Este é um texto <sub>subscript</sub> , ex: O<sub>-2</sub>
-- `<sup> </sup>` // Este é um texto <sup>superscript</sup> , ex: X<sup>2</sup>
+- `<em> </em>` //Este é um texto <em>em italico</em>
+- `<mark> </mark>` //Para marcar o texto como se fosse um marca texto amarelo
+- `<small> </small>` //Para deixar o texto pequeno
+- `<del> </del>` //Este é um texto <del>que foi removido</del> e substituido por este
+- `<ins> </ins>` //(cite, datetime) Este é um texto <ins>que foi inserido</ins>
+- `<sub> </sub>` //Este é um texto <sub>subscript</sub> , ex: O<sub>-2</sub>
+- `<sup> </sup>` //Este é um texto <sup>superscript</sup> , ex: X<sup>2</sup>
 
 #
 
