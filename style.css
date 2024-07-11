@@ -1,29 +1,34 @@
-.separador{
-    text-align: left;
-    font-size: 22px;
-    padding: 5px;
-    padding-left: 30px;
-    color: white;
-    background-color: blue;
+.separador {
+  text-align: left;
+  font-size: 22px;
+  padding: 5px;
+  padding-left: 30px;
+  color: white;
+  background-color: blue;
 }
-.backgroundDiv01{
-    color: red;
-    background: url(./imagens/fundo1.jpeg)
+.backgroundDiv01 {
+  color: red;
+  background: url(./imagens/fundo1.jpeg);
 }
-.backgroundDiv02{
-    color: black;
-    background: url(./imagens/fundo1.jpeg)
+.backgroundDiv02 {
+  color: black;
+  background: url(./imagens/fundo1.jpeg);
 }
-.color{
-    color: white;
-    background: rgb(43, 131, 207);
+.color {
+  color: white;
+  background: rgb(43, 131, 207);
 }
-h2{
-    background-color: rgb(250, 250, 178);
-    width: max-content;
+h2 {
+  background-color: rgb(250, 250, 178);
+  width: max-content;
 }
 .frame {
-    background-color: blanchedalmond;
-    width: 660px;
-    height: 380px;
+  background-color: blanchedalmond;
+  width: 660px;
+  height: 380px;
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
 }
