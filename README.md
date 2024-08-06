@@ -1,5 +1,7 @@
 # 02-estudos-html
 
+Este repositório contém todos os recursos, exemplos e notas que compilei enquanto aprendia HTML. Meu objetivo é fornecer uma referência útil e prática a partir do que aprendi e documentar meu próprio progresso.
+
 ### ÍNDICE
 
 - [PRINCIPAIS TAGS](#principais-tags)
